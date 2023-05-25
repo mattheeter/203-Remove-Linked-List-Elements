@@ -5,6 +5,10 @@ class ListNode:
 
 def removeElements(head, value):
     new_head = head
+
+    if (new_head == None):
+        return None
+
     if (head.val == value):
         new_head = head.next
         head.next = None
